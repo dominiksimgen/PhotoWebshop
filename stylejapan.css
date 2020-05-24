@@ -6,20 +6,19 @@
     --color5: #020205;
 }
 
-img {
-    width: 100%;
-    font-family: Helvetica, Arial, sans-serif;
-}
+
 
 body {
-    background-color: var(--color1);
+    background-color: var(--color4);
 }
 
 
 .menuesidebar {
   position: fixed;
-  width: 19%;
-  background-color: var(--color3); 
+  width: 18%;
+  background-color: var(--color1); 
+  height: 100%;
+  border: solid 1px var(--color1);
 }
 
 .imagepane {
@@ -28,7 +27,7 @@ body {
     margin-right: auto;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: var(--color4);
+    background-color: var(--color1);
     padding-left: 3%;;
 }
 
@@ -98,6 +97,10 @@ body {
     color: #f1f1f1;
     width: 100%;
     padding: 10%;
+  }
+
+  .container:hover img{
+    filter: blur(10px);
   }
 
 
@@ -194,11 +197,11 @@ body {
 .cartOpenButton{
   color: var(--color2);
   border: 0px solid var(--color4);
-  background-color: var(--color1);
-  width: 150px;
-  height: 30px;
+  background-color: var(--color3);
+  width: 60%;
+  height: auto;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 100%;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
