@@ -1,8 +1,8 @@
 :root{
-    --color1: #111f4d;
-    --color2: #f2f4f7;
-    --color3: #e43a19;
-    --color4: #020205;
+    --color1: #f7fbfc;
+    --color2: #769fcd;
+    --color3: #d6e6f2;
+    --color4: #b9d7ea;
     --color5: #020205;
 }
 
@@ -211,7 +211,7 @@ body {
   
   /* The  modal image close button */
   .close {
-    color: #aaa;
+    color: var(--color2);
     float: right;
     padding-right: 10px;
     font-size: 28px;
