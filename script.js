@@ -62,7 +62,7 @@ document.getElementById("cartitems").innerHTML = cartitems;
 
 var cart = document.getElementsByClassName("cart")[0];
 //console.log(cart);
-var cartOpenButton = document.getElementsByClassName("cartOpenButton")[0];
+var cartOpenButton = document.getElementById("cartOpenButton");
 cartOpenButton.onclick = function () {
   cart.style.display = "block";
 }
@@ -72,4 +72,6 @@ var cartCloseButton = document.getElementsByClassName("cartClose")[0];
 cartCloseButton.onclick = function () { 
   cart.style.display = "none";
 };
+
+
 
