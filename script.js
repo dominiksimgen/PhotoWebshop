@@ -4,7 +4,7 @@ var collection = "j";
 var column1 = "";
 var column2 = "";
 var column3 = "";
-for (var i = 1; i <= imageCountperColumn; i++) {
+for (let i = 1; i <= imageCountperColumn; i++) {
   column1 +=
     '<div class="container"><img src="img/' +
     collection +
@@ -31,9 +31,7 @@ var modal = document.getElementById("myModal");
 var numberOfViewButtons = document.querySelectorAll(".ViewButton").length;
 for (var i = 0; i < numberOfViewButtons; i++) {
   var numberOfViewButtons = document.querySelectorAll(".ViewButton").length;
-  document
-    .querySelectorAll(".ViewButton")
-    [i].addEventListener("click", function () {
+  document.querySelectorAll(".ViewButton")[i].addEventListener("click", function () {
       var pictureAdress = this.parentNode.parentNode.children[0].getAttribute(
         "src"
       );
@@ -43,8 +41,8 @@ for (var i = 0; i < numberOfViewButtons; i++) {
     });
 }
 //assign close functionality
-var span = document.getElementsByClassName("close")[0];
-span.onclick = function () {  // When the user clicks on <span> (x), close the modal
+var modalCloseButton = document.getElementsByClassName("close")[0];
+modalCloseButton.onclick = function () {  // When the user clicks on <span> (x), close the modal
   modal.style.display = "none";
 };
 window.onclick = function (event) { // When the user clicks anywhere outside of the modal, close it
@@ -52,3 +50,26 @@ window.onclick = function (event) { // When the user clicks anywhere outside of 
     modal.style.display = "none";
   }
 };
+
+
+//shopping cart
+var cartitems = "";
+for(let i = 0; i < 5; i++){
+  cartitems += '<p class="cartitem">test</p>';
+}
+document.getElementById("cartitems").innerHTML = cartitems;
+
+
+var cart = document.getElementsByClassName("cart")[0];
+//console.log(cart);
+var cartOpenButton = document.getElementsByClassName("cartOpenButton")[0];
+cartOpenButton.onclick = function () {
+  cart.style.display = "block";
+}
+
+
+var cartCloseButton = document.getElementsByClassName("cartClose")[0];
+cartCloseButton.onclick = function () { 
+  cart.style.display = "none";
+};
+
