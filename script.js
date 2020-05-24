@@ -55,10 +55,11 @@ window.onclick = function (event) { // When the user clicks anywhere outside of 
 //shopping cart
 var cartitems = "";
 for(let i = 0; i < 5; i++){
-  cartitems += '<p class="cartitem">test</p>';
+  cartitems += '<div class="cartItemContainer"><img src="img/j1.jpeg" class="cartThumbnail"><button class="cartItemButton">remove</button></div><br>';
 }
 document.getElementById("cartitems").innerHTML = cartitems;
 
+//<p class="cartitem">test</p>
 
 var cart = document.getElementsByClassName("cart")[0];
 //console.log(cart);
