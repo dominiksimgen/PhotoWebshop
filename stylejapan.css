@@ -177,6 +177,7 @@ body {
   }
 
 
+  /*------- shopping cart -----*/
 .cart {
     display: none; /* none: Hidden by default */
     position: fixed; /* Stay in place */
@@ -188,6 +189,23 @@ body {
     overflow: auto; /* Enable scroll if needed */
     background-color: var(--color1); 
     box-shadow: 0px 20px 50px black;;
+}
+
+.cartOpenButton{
+  color: var(--color2);
+  border: 0px solid var(--color4);
+  background-color: var(--color1);
+  width: 150px;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 1.0;
+  outline:0;
+  /*float: right;*/
+  margin: 5px;
 }
 
 .cartClose {
