@@ -42,8 +42,6 @@ body {
   margin: 5px;
 }
 
-
-
 .imagepane {
     display: block;
     width: 80%;
@@ -54,7 +52,6 @@ body {
     background-color: var(--color1);
     padding-left: 3%;;
 }
-
 
 @media screen and (max-width: 800px) {
   .sidebarButtons {
@@ -99,7 +96,7 @@ body {
   }
   
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
     .column {
       flex: 100%;
@@ -112,9 +109,7 @@ body {
     box-sizing: border-box;
   }
   
-
   /*-------Image Container and Buttons--------*/
-  
   .container {
     
     position: relative;
@@ -185,7 +180,6 @@ body {
 }
 
 /*-------Image Modal-----*/
-
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -225,7 +219,6 @@ body {
     cursor: pointer;
   }
 
-
   /*------- shopping cart -----*/
 .cart {
     display: none; /* none: Hidden by default */
@@ -239,7 +232,6 @@ body {
     background-color: var(--color1); 
     box-shadow: 0px 20px 50px black;;
 }
-
 
 .cartClose {
   position: fixed;
@@ -293,7 +285,6 @@ body {
 
 }
 
-
 .cartItemRemoveButton {
   margin-left: 10%;
   position: relative;
@@ -334,7 +325,6 @@ body {
   outline:0;
 }
 
-
 .orderComplete {
   display: none; /* none: Hidden by default */
   position: fixed; /* Stay in place */
@@ -348,7 +338,3 @@ body {
   box-shadow: 0px 20px 50px black;
   text-align: center;
 }
-
-
-
-
